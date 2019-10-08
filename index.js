@@ -71,6 +71,7 @@ jsonData.forEach(topic => {
       comment,
       url: pathname,
       rid:  rid ? rid.toString() : undefined,
+      ip: item.ip,
       createdAt: {
         __type: 'Date',
         iso: new Date(item.create_time).toISOString()
